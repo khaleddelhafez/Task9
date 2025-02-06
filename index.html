@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>task 9</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/all.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  
+</head>
+<body>
+  <header class="navbar navbar-expand-sm navbar-dark position-fixed w-100 z-3 px-xl-5 px-lg-4 px-md-3 px-sm-2">
+    <nav class="container-fluid">
+      <a class="navbar-brand fs-1 " href="#"><span>Blue</span> Market</a>
+    <ul class="navbar-nav fs-3 d-flex align-items-center">
+      <input type="search" class="ps-3 rounded search d-none d-lg-block" placeholder="search" autocomplete = "on">
+      <li title="Search" class="nav-item"><a class="nav-link" href="#"><i class="fa-solid fa-magnifying-glass me-1"></i></a></li>
+      <li  class="nav-item position-relative">
+        <a class="nav-link" id="cart" href="#" data-bs-toggle="collapse" data-bs-target="#cart-div">
+          <i class="fa-solid fa-cart-shopping"></i><div class="cart-badge"></div>
+        </a>
+        <div class="collapse drop-list position-absolute bg-light  p-3 rounded" id="cart-div">
+          <h3 class="text-center">CART</h3>
+          <h6 class="text-secondary">Products</h6>
+          <div class="cart-items fs-4 fw-medium"></div>  <!-- cart-items   -->
+          <button class=" btn bg-primary text-light confirm-btn mt-2">Confirm</button><br>
+          <h6 class="text-secondary mt-2">Price</h6>
+          <div class="item-price text-success"></div><hr>
+          <div class="cart-price"></div>   <!-- cart-price -->
+        </div>
+      </li>
+      <span class="nav-link">|</span>
+      <li title="Log in" class="nav-item"><a class="nav-link" href="#"><i class="fa-solid fa-right-to-bracket"></i></a></li>
+    </ul>
+  </nav>
+  </header>
+
+
+  <section class="sec1 container-fluid mx-auto row justify-content-center gap-5">
+    <!-- ///////////////////////////////  card 1   ////////////////////////////////// -->
+    <div class="card">
+      <div class="img-overlay p-3 d-md-none d-sm-none d-lg-block">
+        <h3><span class="badge bg-danger rounded-pill shadow">Sale</span></h3>
+      </div>
+      <img src="images/f61138da5e0a3af7c7c83b6166f1cb03dbfee30ff.jpg" alt="error" class="card-img-top col-6 col-lg-4 col-lg-3">
+      <div class="card-body">
+        <h4 class="productname">PlayStation 5</h4>
+        <span class="fs-5 fw-medium text-secondary me-2"><del>32,999 L.E</del></span>
+        <span class="fs-5 fw-medium">26,000 L.E</span>
+        <button price="26000" value="PlayStation 5" class="btn add-btn bg-primary text-light " id="btn">Add To Cart</button>
+      </div>
+    </div>
+    <!-- ///////////////////////////////  card 2   ////////////////////////////////// -->
+    <div class="card">
+      <div class="img-overlay p-3"></div>
+      <img src="https://m.media-amazon.com/images/I/61i8Vjb17SL.jpg" alt="error" class="card-img-top col-6 col-lg-4 col-lg-3">
+      <div class="card-body">
+        <h4 class="productname">Iphone 13 Pro Max</h4>
+        <span class="fs-5 fw-medium">37,000 L.E</span>
+        <button price="37000" value="Iphone 13 Pro Max" class="btn add-btn bg-primary text-light ">Add To Cart</button>
+      </div>
+    </div>
+    <!-- ///////////////////////////////  card 3   ////////////////////////////////// -->
+    <div class="card">
+      <div class="img-overlay p-3">
+        <h3><span class="badge bg-danger rounded-pill shadow">Sale</span></h3>
+      </div>
+      <img src="images/freepik__background__628022.jpg" alt="error" class="card-img-top col-6 col-lg-4 col-lg-3">
+      <div class="card-body">
+        <h4 class="productname">Classic Watch</h4>
+        <span class="fs-5 fw-medium text-secondary me-2"><del>7,200 L.E</del></span>
+        <span class="fs-5 fw-medium">6,000 L.E</span>
+        <button price="6000"  value="Classic Watch" class="btn add-btn bg-primary text-light  ">Add To Cart</button>
+      </div>
+    </div>
+    <!-- ///////////////////////////////  card 4   ////////////////////////////////// -->
+    <div class="card">
+      <div class="img-overlay p-3"></div>
+      <img src="images/8d4559ittjzewyws4gtg01b9h073jc536625.avif" alt="error" class="img card-img-top col-6 col-lg-4 col-lg-3">
+      <div class="card-body">
+        <h4 class="productname">Lenovo Laptop</h4>
+        <span class="fs-5 fw-medium">16,000 L.E</span>
+        <button price="16000" value="Lenovo Laptop"  class="btn add-btn bg-primary text-light ">Add To Cart</button>
+      </div>
+    </div>
+    <!-- ///////////////////////////////  card 5   ////////////////////////////////// -->
+    <div class="card">
+      <div class="img-overlay p-3">
+        <h3><span class="badge bg-danger rounded-pill shadow">Sale</span></h3>
+      </div>
+      <img src="https://img.freepik.com/premium-psd/smartphone-s23-ultra-app-promo-flyer-mockup-with-transparent-background_349001-813.jpg" alt="error" class="img card-img-top col-6 col-lg-4 col-lg-3">
+      <div class="card-body">
+        <h4 class="productname">Samsung S23 Ultra</h4>
+        <span class="fs-5 fw-medium text-secondary me-2"><del>46,000 L.E</del></span>
+        <span class="fs-5 fw-medium">41,000 L.E</span>
+        <button price="41000" value="Samsung S23 Ultra"  class="btn add-btn bg-primary text-light  ">Add To Cart</button>
+      </div>
+    </div>
+    <!-- ///////////////////////////////  card 6   ////////////////////////////////// -->
+    <div class="card">
+      <div class="img-overlay p-3"></div>
+      <img src="https://bigbox.rw/wp-content/uploads/2023/12/SANO-SMART-TV-43-inches-1-1200x900-1-1.jpg" alt="error" class="img card-img-top col-6 col-lg-4 col-lg-3">
+      <div class="card-body">
+        <h4 class="productname">Sano Television</h4>
+        <span class="fs-5 fw-medium">22,000 L.E</span>
+        <button price="22000" value="Sano Television"  class="btn add-btn bg-primary text-light ">Add To Cart</button>
+      </div>
+    </div>
+    <!-- ///////////////////////////////  card 7   ////////////////////////////////// -->
+    <div class="card">
+      <div class="img-overlay p-3">
+        <h3><span class="badge bg-danger rounded-pill shadow">Sale</span></h3>
+      </div>
+      <img src="images/eH7muHj6y4RyJ5QYkGX8oT.jpg" alt="error" class="card-img-top col-6 col-lg-4 col-lg-3">
+      <div class="card-body">
+        <h4 class="productname">Xbox Series X</h4>
+        <span class="fs-5 fw-medium text-secondary me-2"><del>29,599 L.E</del></span>
+        <span class="fs-5 fw-medium">25,400 L.E</span>
+        <button price="25400" value="Xbox Series X"  class="btn add-btn bg-primary text-light  ">Add To Cart</button>
+      </div>
+    </div>
+    <!-- ///////////////////////////////  card 8   ////////////////////////////////// -->
+    <div class="card">
+      <div class="img-overlay p-3">
+        <h3><span class="badge bg-danger rounded-pill shadow">Sale</span></h3>
+      </div>
+      <img src="images/Apple_Watch_Series_7_GPS_41mm_Midnight_Aluminum_Midnight_Sport_Band_PDP_Image_Position-1__PH_48cfa4e2-1ed9-49a5-a51b-becdc4e97123.webp" alt="error" class="card-img-top col-6 col-lg-4 col-lg-3">
+      <div class="card-body">
+        <h4 class="productname">Apple watch Series 7</h4>
+        <span class="fs-5 fw-medium text-secondary me-2"><del>14,000 L.E</del></span>
+        <span class="fs-5 fw-medium">11,000 L.E</span>
+        <button price="11000" value="Apple watch Series 7"  class="btn add-btn bg-primary text-light  ">Add To Cart</button>
+      </div>
+    </div>
+    <!-- ///////////////////////////////  card 9   ////////////////////////////////// -->
+    <div class="card">
+      <div class="img-overlay p-3">
+        <h3><span class="badge bg-danger rounded-pill shadow">Sale</span></h3>
+      </div>
+      <img src="images/keyboard-mouse.webp" alt="error" class="card-img-top col-6 col-lg-4 col-lg-3">
+      <div class="card-body">
+        <h4 class="productname">Gaming Keyboard & mouse</h4>
+        <span class="fs-5 fw-medium text-secondary me-2"><del>3,100 L.E</del></span>
+        <span class="fs-5 fw-medium">2,600 L.E</span>
+        <button price="2600"  value="Gaming Keyboard & mouse" class="btn add-btn bg-primary text-light  ">Add To Cart</button>
+      </div>
+    </div>
+    <!-- ///////////////////////////////  card 10   ////////////////////////////////// -->
+    <div class="card">
+      <div class="img-overlay p-3"></div>
+      <img src="images//galaxy-tab-s9-18.webp" alt="error" class="card-img-top col-6 col-lg-4 col-lg-3">
+      <div class="card-body">
+        <h4 class="productname">Galaxy Tab S9</h4>
+        <span class="fs-5 fw-medium">24,450 L.E</span>
+        <button price="24450" value="Galaxy Tab S9"  class="btn add-btn bg-primary text-light ">Add To Cart</button>
+      </div>
+    </div>
+  </section>
+
+  
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
